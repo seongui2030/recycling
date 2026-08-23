@@ -1,0 +1,6 @@
+0 clothes          의류
+1 shoes            신발
+2 book             도서
+3 kitchenware      주방용품
+4 small_appliance  소형가전
+5 bag              가방

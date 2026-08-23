@@ -1,0 +1,21 @@
+recycling_sdg12/
+├─ api/
+│  └─ detect.js                 # Vercel 서버리스 Roboflow proxy
+├─ roboflow/
+│  ├─ annotation_rules.md
+│  └─ classes.txt
+├─ src/
+│  ├─ App.jsx                   # 모바일 UI + 검출 + count + 수정 + 저장
+│  ├─ main.jsx
+│  ├─ styles.css
+│  └─ supabase.js
+├─ supabase/
+│  └─ schema.sql                # DB + RLS
+├─ .env.example
+├─ ASSESSMENT_RUBRIC.md
+├─ STUDENT_WORKSHEET.md
+├─ TEACHER_GUIDE.md
+├─ YOLO_COLAB.py
+├─ README.md
+├─ package.json
+└─ vite.config.js
