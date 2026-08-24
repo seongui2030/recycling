@@ -48,66 +48,19 @@ export default function App() {
   const [message, setMessage] = useState('')
   const [saved, setSaved] = useState(false)
 
-  // Supabase 로그인 상태 감지 + OAuth callback 토큰 복원
+  // Supabase 로그인 상태 감지 및 사용자 정보 업데이트
   useEffect(() => {
     if (!hasSupabase) return
 
-    let mounted = true
-
-    async function restoreSession() {
-      try {
-        const hash = new URLSearchParams(window.location.hash.replace(/^#/, ''))
-        const accessToken = hash.get('access_token')
-        const refreshToken = hash.get('refresh_token')
-
-        if (accessToken && refreshToken) {
-          const { data, error } = await supabase.auth.setSession({
-            access_token: accessToken,
-            refresh_token: refreshToken,
-          })
-
-          if (error) {
-            console.error('OAuth setSession error:', error)
-            if (mounted) setMessage(`로그인 세션 처리 오류: ${error.message}`)
-          } else if (mounted) {
-            setUser(data.session?.user ?? null)
-            window.history.replaceState(
-              {},
-              document.title,
-              window.location.pathname + window.location.search
-            )
-          }
-          return
-        }
-
-        const { data, error } = await supabase.auth.getSession()
-
-        if (error) {
-          console.error('getSession error:', error)
-          if (mounted) setMessage(`세션 확인 오류: ${error.message}`)
-          return
-        }
-
-        if (mounted) setUser(data.session?.user ?? null)
-      } catch (error) {
-        console.error('restoreSession error:', error)
-        if (mounted) setMessage(`로그인 처리 오류: ${error.message}`)
-      }
-    }
-
-    restoreSession()
-
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((event, session) => {
-      console.log('AUTH EVENT:', event)
-      if (mounted) setUser(session?.user ?? null)
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setUser(session?.user ?? null)
     })
 
-    return () => {
-      mounted = false
-      subscription.unsubscribe()
-    }
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null)
+    })
+
+    return () => subscription.unsubscribe()
   }, [])
 
   const counts = useMemo(
@@ -122,33 +75,15 @@ export default function App() {
       setMessage('Supabase 환경변수가 없어 현재는 로그인 없이 데모 모드로 실행됩니다.')
       return
     }
-
-    setMessage('')
-
-    const { error } = await supabase.auth.signInWithOAuth({
+    await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: { redirectTo: window.location.origin },
     })
-
-    if (error) {
-      console.error('Google signIn error:', error)
-      setMessage(`Google 로그인 오류: ${error.message}`)
-    }
   }
 
   async function signOut() {
     if (!hasSupabase) return
-
-    const { error } = await supabase.auth.signOut()
-
-    if (error) {
-      console.error('signOut error:', error)
-      setMessage(`로그아웃 오류: ${error.message}`)
-      return
-    }
-
-    setUser(null)
-    setMessage('로그아웃되었습니다.')
+    await supabase.auth.signOut()
   }
 
   async function onPhoto(event) {
