@@ -1,4 +1,3 @@
-# 04-05. 왜 Roboflow 키는 서버에 둘까요
 
 > **브라우저에 비밀을 보여 주지 않는 습관**
 
@@ -23,7 +22,7 @@ ROBOFLOW_MODEL_ID=recycling-items/1
 
 Vercel은 Vite 프로젝트에서 `api` 디렉터리의 파일을 Vercel Function으로 사용할 수 있는 방식을 안내합니다. citeturn1search0
 
-### 보안의 기본 원칙
+## 보안의 기본 원칙
 
 **사용자에게 보여 줘도 되는 값과 보여 주면 안 되는 값을 구분합니다.**
 

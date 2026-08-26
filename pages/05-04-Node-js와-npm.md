@@ -1,4 +1,3 @@
-# 05-04. Node.js와 npm
 
 > **브라우저 밖에서도 JavaScript를 실행하기**
 
@@ -13,7 +12,7 @@ node --version
 npm --version
 ```
 
-### package.json
+## package.json
 
 프로젝트의 `package.json`은 어떤 패키지를 사용하고 어떤 명령을 실행하는지 알려 줍니다.
 
@@ -25,7 +24,7 @@ npm run dev
 
 는 package.json의 scripts에 등록된 `dev` 명령을 실행합니다.
 
-### npm install
+## npm install
 
 프로젝트 폴더에서:
 

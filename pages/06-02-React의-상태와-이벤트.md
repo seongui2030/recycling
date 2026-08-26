@@ -1,4 +1,3 @@
-# 06-02. React의 상태와 이벤트
 
 > **변하는 값을 state로 기억합니다**
 
@@ -26,7 +25,7 @@ const [count, setCount] = useState(0)
 setCount(count + 1)
 ```
 
-### 이벤트
+## 이벤트
 
 버튼 클릭:
 

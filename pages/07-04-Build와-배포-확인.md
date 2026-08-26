@@ -1,4 +1,3 @@
-# 07-04. Build와 배포 확인
 
 > **배포가 성공했는지 확인하는 체크포인트**
 
@@ -12,7 +11,7 @@ npm run build
 
 저장소 README에서도 Build Command를 `npm run build`, Output Directory를 `dist`로 안내합니다. fileciteturn9file0
 
-### 배포 후 확인 순서
+## 배포 후 확인 순서
 
 1. Vercel Deployment가 Ready인지 확인합니다.
 2. 배포 URL을 엽니다.
@@ -23,7 +22,7 @@ npm run build
 7. 기부 등록을 합니다.
 8. Supabase Table Editor에서 기록을 확인합니다.
 
-### Vercel 로그
+## Vercel 로그
 
 문제가 생기면 Deployment의 Functions/Logs를 확인합니다.
 

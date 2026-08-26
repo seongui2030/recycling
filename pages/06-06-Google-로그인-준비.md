@@ -1,4 +1,3 @@
-# 06-06. Google 로그인 준비
 
 > **Google 계정을 앱의 출입증으로 사용하기**
 
@@ -17,7 +16,7 @@ const { error } = await supabase.auth.signInWithOAuth({
 
 Supabase 공식 문서도 `signInWithOAuth({ provider: 'google' })` 방식과 redirect 설정을 안내합니다. citeturn0search0turn0search2
 
-### 준비할 것
+## 준비할 것
 
 - Google Cloud 프로젝트
 - OAuth Client

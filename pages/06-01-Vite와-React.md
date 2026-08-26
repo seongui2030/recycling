@@ -1,4 +1,3 @@
-# 06-01. Vite와 React 이해하기
 
 > **화면을 작은 조각으로 생각하기**
 
@@ -13,7 +12,7 @@ Vite는 개발과 빌드를 편리하게 해 주는 도구입니다.
 
 우리 프로젝트의 시작점은 `src/main.jsx`이고 실제 화면은 `App.jsx`가 담당합니다. 저장소의 src 구조를 보면 `App.jsx`, `main.jsx`, `styles.css`, `supabase.js`가 핵심 파일로 나뉘어 있습니다. fileciteturn5file0
 
-### React의 기본 생각
+## React의 기본 생각
 
 화면은 현재 데이터 상태에 따라 달라집니다.
 

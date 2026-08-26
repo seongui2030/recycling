@@ -1,4 +1,3 @@
-# 05-05. Vite React 프로젝트 실행
 
 > **내 컴퓨터에서 앱을 먼저 열어 보기**
 
@@ -18,7 +17,7 @@ VITE_DEMO_MODE=true
 
 로 두면 실제 Roboflow 연결 없이 수업용 결과를 확인할 수 있습니다. fileciteturn9file0
 
-### DEMO MODE가 좋은 이유
+## DEMO MODE가 좋은 이유
 
 처음부터 AI 모델, Supabase, Google 로그인, Vercel을 모두 연결하면 문제가 생겼을 때 어디가 문제인지 알기 어렵습니다.
 

@@ -1,4 +1,3 @@
-# 04-06. fetch로 API 호출하기
 
 > **브라우저에서 서버로 부탁 편지를 보내기**
 
@@ -18,7 +17,7 @@ const res = await fetch('/api/detect', {
 
 를 사용합니다. fileciteturn6file0
 
-### 세 줄로 기억하기
+## 세 줄로 기억하기
 
 ```text
 fetch → 서버에 요청
@@ -32,7 +31,7 @@ json() → JSON 데이터로 읽음
 const json = await res.json()
 ```
 
-### 학생 실험
+## 학생 실험
 
 브라우저 개발자 도구의 Network 탭을 열고 사진을 선택해 봅니다.
 

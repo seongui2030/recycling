@@ -1,10 +1,9 @@
-# 07-08. Local, Preview, Production
 
 > **같은 앱도 세 가지 장소에서 살아갈 수 있습니다**
 
 Vercel은 기본적으로 Local, Preview, Production이라는 환경을 구분합니다. citeturn1search6
 
-### Local
+## Local
 
 내 컴퓨터에서 개발합니다.
 
@@ -12,15 +11,15 @@ Vercel은 기본적으로 Local, Preview, Production이라는 환경을 구분�
 http://localhost:5173
 ```
 
-### Preview
+## Preview
 
 새로운 변경사항을 실제 서비스에 반영하기 전에 테스트합니다.
 
-### Production
+## Production
 
 실제 사용자가 접속하는 최종 서비스입니다.
 
-### 왜 구분할까요?
+## 왜 구분할까요?
 
 학생이 코드를 수정할 때마다 바로 실제 사용자에게 영향을 주면 위험합니다.
 

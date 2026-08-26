@@ -1,4 +1,3 @@
-# 07-05. Google Redirect URL 점검
 
 > **로컬 주소와 배포 주소를 모두 생각하기**
 
@@ -20,7 +19,7 @@ https://recycling-iota.vercel.app
 
 Supabase Google 로그인 문서에서도 개발용 localhost와 실제 애플리케이션 URL을 OAuth 설정에 맞게 구성하는 과정을 설명합니다. citeturn0search2
 
-### 점검표
+## 점검표
 
 ```text
 □ Google Auth Platform 설정

@@ -1,10 +1,9 @@
-# 02-04. Roboflow 프로젝트 만들기
 
 > **AI 공장에 첫 번째 작업장을 만듭니다**
 
 Roboflow에서는 사진을 모으고, 라벨을 붙이고, 데이터셋 버전을 만들고, 모델을 학습하고, 테스트할 수 있습니다.
 
-### 따라 하기
+## 따라 하기
 
 1. Roboflow에 로그인합니다.
 2. 새 Workspace 또는 수업용 Workspace를 선택합니다.
@@ -15,7 +14,7 @@ Roboflow에서는 사진을 모으고, 라벨을 붙이고, 데이터셋 버전�
 
 저장소 README에도 `recycling-items` Object Detection 프로젝트를 만드는 과정과 6개 class가 설명되어 있습니다. fileciteturn9file0
 
-### Roboflow 메뉴를 작업실로 이해하기
+## Roboflow 메뉴를 작업실로 이해하기
 
 - **Upload Data**: 공부할 사진을 넣는 곳
 - **Annotate**: 사진에 정답 상자를 그리는 곳

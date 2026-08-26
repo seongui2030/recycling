@@ -1,8 +1,7 @@
-# 07-02. GitHub와 Vercel 연결
 
 > **코드를 올리면 웹앱이 따라 올라갑니다**
 
-### Dashboard 방식
+## Dashboard 방식
 
 1. Vercel에 로그인합니다.
 2. Add New Project를 선택합니다.
@@ -13,7 +12,7 @@
 
 Vercel은 GitHub와 연결된 저장소에서 commit이나 pull request를 기준으로 자동 배포할 수 있습니다. citeturn1search3
 
-### CLI를 사용한다면
+## CLI를 사용한다면
 
 공식 문서에는 다음과 같은 흐름도 있습니다.
 

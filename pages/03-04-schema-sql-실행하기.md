@@ -1,10 +1,9 @@
-# 03-04. schema.sql 실행하기
 
 > **준비된 설계도를 한 번에 데이터베이스에 적용합니다**
 
 저장소의 `supabase/schema.sql`에는 테이블, 제약조건, RLS 정책, 신규 사용자 profile 생성 trigger가 들어 있습니다. fileciteturn10file0
 
-### 따라 하기
+## 따라 하기
 
 1. Supabase Dashboard에서 SQL Editor를 엽니다.
 2. 프로젝트의 `supabase/schema.sql` 내용을 엽니다.
@@ -13,7 +12,7 @@
 5. Run을 누릅니다.
 6. Table Editor에서 `profiles`, `donations`, `donation_items`를 확인합니다.
 
-### SQL을 무서워하지 마세요
+## SQL을 무서워하지 마세요
 
 다음 문장은 테이블을 만든다는 뜻입니다.
 

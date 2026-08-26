@@ -1,4 +1,3 @@
-# 06-07. Supabase Google OAuth 연결
 
 > **Google → Supabase → 우리 앱**
 
@@ -18,7 +17,7 @@ Supabase Auth
 
 가이드에서는 Google Client ID/Secret, Supabase URL, Publishable/Anon 계열 키, User JWT를 각각 다른 역할로 구분합니다. fileciteturn0file0L51-L66
 
-### 코드
+## 코드
 
 ```javascript
 await supabase.auth.signInWithOAuth({
@@ -31,7 +30,7 @@ await supabase.auth.signInWithOAuth({
 
 Supabase 공식 문서의 Google 로그인 예제 역시 `provider: 'google'`을 사용합니다. citeturn0search2
 
-### Redirect URL
+## Redirect URL
 
 OAuth에서 가장 많이 만나는 문제가 redirect 설정입니다.
 

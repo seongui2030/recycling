@@ -1,4 +1,3 @@
-# 06-08. 세션과 getUser 이해하기
 
 > **로그인한 사람이 누구인지 확인하기**
 
@@ -17,7 +16,7 @@ const currentUser = auth?.user
 
 그리고 `currentUser.id`를 `donations.user_id`에 저장합니다.
 
-### 세션 변화 감지
+## 세션 변화 감지
 
 프로젝트는 `onAuthStateChange`도 사용합니다.
 
@@ -29,7 +28,7 @@ supabase.auth.onAuthStateChange((event, session) => {
 
 첨부 가이드에서도 로그인/로그아웃 상태 변경을 감지하는 같은 개념의 코드를 설명합니다. fileciteturn0file0L122-L140
 
-### 기억하기
+## 기억하기
 
 ```text
 signInWithOAuth → 로그인 시작
